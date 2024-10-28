@@ -206,13 +206,3 @@ body{
     color: var(--cor-titulo);
     font-size: 1.75rem;
 }
-
-@media(max-width: 900px){
-    .informacoes__tela{
-        flex-direction: column;
-        text-align: center;
-    }
-    .assinar{
-        flex-direction: column-reverse;
-    }
-}
