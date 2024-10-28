@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --cor-de-fundo: #000000;
+    --cor-titulo: #FFFFFF;
+    --cor-paragrafos: #f9f9f9;
+    --cor-letrinhas: #c0c0c0;
+    --cor-botao-assinar: #167BF7;
+    --fonte: "Inter", sans-serif;
+    --cor-efeito-botao: #4090f0;
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+}
+
+.principal{
+    background-image: url("/assets/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 8% 10%;
+}
+
+.propaganda{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 22px;
+    width: 45%;
+}
+
+.imagem{
+    width: 50%;
+}
+
+.combo{
+    width: 60%;
+}
+
+.link_assinar_combo{
+    width: 95%;
+    background-color: var(--cor-botao-assinar);
+    color: var(--cor-titulo);
+    padding: 16px;
+    border-radius: 8px;
+    text-decoration: none; 
+    font-family: var(--fonte);
+    font-size: 1rem;
+}
+
+.link_assinar_combo:hover{
+    background-color: var(--cor-efeito-botao);
+    color: var(--cor-de-fundo);
+    text-decoration: underline;  
+}
+
+.link_assinar_alura{
+    width: 95%;
+    color: var(--cor-titulo);
+    text-decoration: none;
+    border: 2px solid var(--cor-titulo);
+    border-radius: 8px;
+    padding: 16px;
+    font-family: var(--fonte);
+    font-size: 1rem;
+}
+
+.link_assinar_alura:hover{
+    background-color: #464343;
+    color: var(--cor-de-fundo);
+    text-decoration: underline;
+    border-width: 0px;
+
+}
+
+.informacoes__tela{
+    display: flex;
+    margin: 8% 10%;
+    align-items: center;
+    gap: 80px;
+}
+
+.texto_tela{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 50%;
+}
+
+
+.botao_assinar{
+    text-decoration: none;
+    padding: 16px;
+    width: 163px;
+    color: var(--cor-titulo);
+    background-color: var(--cor-botao-assinar);
+    border-radius: 8px;
+    font-family: var(--fonte);
+    font-size: 1rem;
+    text-align: center;
+}
+
+.botao_assinar:hover{
+    background-color: var(--cor-efeito-botao);
+    color: var(--cor-de-fundo);
+    text-decoration: underline;
+}
+
+
+.informacoes__plataformas{
+    text-align: center;
+    padding: 10% 12%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.pai{
+    display: flex;
+    align-items: center;
+    gap: 68px;
+}
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+}
+
+.logo_links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+}
+
+.rodape__links{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 16px;
+}
+
+.texto_subliminar{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+    padding: 0% 5% 10% 5%;
+    font-family: var(--fonte);
+    font-weight: 400;
+    color: var(--cor-letrinhas);
+}
+
+.link_lista{
+    color: var(--cor-titulo);
+    text-decoration: none;
+    font-family: var(--fonte);
+    font-size: 1rem;
+}
+
+.link_lista:hover{
+    color: var(--cor-botao-assinar);
+}
+
+.titulo{
+    font-family: var(--fonte);
+    font-weight: 700;
+    color: var(--cor-titulo);
+    font-size: 3rem;
+}
+
+.texto{
+    font-family: var(--fonte);
+    font-weight: 400;
+    color: var(--cor-paragrafos);
+    font-size: 1rem;
+}
+
+.texto__plataforma{
+    font-family: var(--fonte);
+    font-weight: 700;
+    color: var(--cor-titulo);
+    font-size: 2rem;
+}
+
+.texto_aviso{
+    font-family: var(--fonte);
+    font-weight: 400;
+    color: var(--cor-letrinhas);
+    font-size: 0.75rem;
+}
+
+.titulo_propaganda{
+    font-family: var(--fonte);
+    font-weight: 700;
+    color: var(--cor-titulo);
+    font-size: 1.75rem;
+}
+
+@media(max-width: 900px){
+    .informacoes__tela{
+        flex-direction: column;
+        text-align: center;
+    }
+    .assinar{
+        flex-direction: column-reverse;
+    }
+}
