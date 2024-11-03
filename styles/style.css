@@ -20,7 +20,7 @@ body{
 }
 
 .principal{
-    background-image: url(https://github.com/Felipinho19/Alura_plus/blob/main/assets/Background.png);
+    background-image: url(./assets/Background.png);
     background-repeat: no-repeat;
     background-size: contain;
     padding: 8% 10%;
